@@ -1,3 +1,3 @@
-# MSX-PLAY
+# xml2msxplay
 
-Alguns testes com o comando PLAY
+Utility to convert .musicxml files generated from TuxGuitar into .bas format for running on MSX systems.
