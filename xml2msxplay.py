@@ -162,7 +162,7 @@ def main():
             if tempos[i] is not None:
                 current_tempo = tempos[i]
             play_cmd = convert_measure_to_play(measure, current_tempo)
-            f.write(f'{line_number} PLAY "{play_cmd}"\n')
+            f.write(f'{line_number} PLAY "{play_cmd}"\r\n')
             line_number += 10
 
     print(f"File {play_file} generated successfully!")

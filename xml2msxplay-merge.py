@@ -37,7 +37,6 @@ for i in range(max_lines):
             if line_number is None and num.isdigit():
                 line_number = num
 
-            
             code_clean = re.sub(r'^\s*PLAY\s*', '', code.strip(), flags=re.IGNORECASE)
 
             parts.append(code_clean)
@@ -45,4 +44,4 @@ for i in range(max_lines):
     if line_number is None:
         line_number = str((i + 1) * 10)
 
-    print(f"{line_number} PLAY " + ", ".join(parts))
+    print(f"{line_number} PLAY " + ", ".join(parts), end="\r\n")
